@@ -1,0 +1,13 @@
+# OS / editor cruft
+.DS_Store
+*.log
+
+# Transient Codex state (do not back up)
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+history.jsonl
+
+# Bun/node install artifacts that may land in plugin caches
+**/node_modules/
+**/.bun-cache/

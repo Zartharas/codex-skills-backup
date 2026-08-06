@@ -1,0 +1,7 @@
+interface:
+  display_name: "Task Observer"
+  short_description: "Logs Codex skill improvement opportunities"
+  default_prompt: "Use $task-observer to capture reusable skill-improvement observations during this task."
+
+policy:
+  allow_implicit_invocation: true
