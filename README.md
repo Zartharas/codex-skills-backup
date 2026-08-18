@@ -8,7 +8,7 @@ live plugin caches. Use this to restore the setup on a new device.
 | Path | Contents |
 |---|---|
 | `codex-cc-skills/` | Codex Desktop + CLI skills: `superpowers`, `memory-system`, `agent-workflows`, `task-observer` (each with `SKILL.md` + `skills/` sub-skills) |
-| `agents-skills/` | Community suite under `~/.agents/skills/`: 22 validated skills (security assessment, academic, AI/RAG/MCP, application security, provenance hygiene, caveman, ponytail, agent-browser, etc.) |
+| `agents-skills/` | Community suite under `~/.agents/skills/`: 24 validated skills (security assessment, academic, AI/RAG/MCP, application security, TDD, evidence-first execution, provenance hygiene, caveman, ponytail, agent-browser, etc.) |
 | `config.toml` | `~/.codex-cc/config.toml` with **ephemeral temp-dir trust entries removed**. Provider uses a local-loop OmniRoute endpoint — no real secrets. |
 | `AGENTS.md` | Global activation instructions read by Codex Desktop (`~/.codex-cc/AGENTS.md`). The CLI's `~/.codex/AGENTS.md` symlinks to this. |
 | `codex-cli-AGENTS.md` | The Codex CLI copy of the same file. |

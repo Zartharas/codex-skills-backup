@@ -1,0 +1,17 @@
+interface:
+  display_name: evidence first execution
+  short_description: Use this skill for research, coding, troubleshooting, analysis,
+    operations, or project work when the task could expand into unnecessary testing,
+    validation, documentation, architecture, governance, or repeated debugging. It
+    keeps execution focused on the real objective, requires the smallest sufficient
+    action, validates the real path before validators, classifies failures correctly,
+    and stops non-core detours after two unsuccessful iterations.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

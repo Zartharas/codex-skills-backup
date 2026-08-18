@@ -1,0 +1,13 @@
+interface:
+  display_name: test driven development
+  short_description: Use when implementing any feature or bugfix, before writing implementation
+    code
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
