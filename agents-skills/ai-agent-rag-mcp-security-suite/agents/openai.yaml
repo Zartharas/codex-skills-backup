@@ -1,0 +1,7 @@
+interface:
+  display_name: "AI, Agent, RAG & MCP Security"
+  short_description: "Security review for RAG, agents, tool invocation, memory, and MCP."
+  default_prompt: "Use $ai-agent-rag-mcp-security-suite to assess this authorized AI/agent/RAG/MCP security boundary."
+  brand_color: "#6D28D9"
+policy:
+  allow_implicit_invocation: false

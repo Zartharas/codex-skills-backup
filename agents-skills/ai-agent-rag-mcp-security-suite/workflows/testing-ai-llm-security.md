@@ -1,64 +1,29 @@
-# testing-ai-llm-security
+# Broad Authorized AI/LLM Security Assessment
 
-## When this workflow applies
+Use when the request spans multiple AI security surfaces rather than a single RAG/MCP/tool issue.
 
-Use for authorized security assessment of AI, LLM, RAG, and agent systems: prompt injection, data leakage, unsafe tool use, output handling, model abuse, supply chain, and monitoring. Define scope, harm limits, test data, and stop conditions. Do not attack public systems, exfiltrate real data, or present a checklist as complete assurance.
+## Build a small system model
 
-## Web execution boundary
+Identify model/provider, system/developer/user inputs, retrieval/memory, tools, output consumers, identities, secrets, tenant boundaries, external actions, moderation/policy controls and logging/feedback loops.
 
-This Web edition provides analysis, planning, review, templates, and verification guidance. It does not imply that a scanner, cloud account, repository, endpoint, HSM, SIEM, SOAR, or other external system is connected. Begin read-only. Require explicit authorization, confirmed scope, available tools, and rollback conditions before any live action.
+## Prioritize security surfaces
 
-## Operating boundaries
+- sensitive data/context disclosure
+- prompt/goal injection with authority impact
+- insecure model-to-tool/action paths
+- agent excessive privilege / confused deputy
+- tenant/retrieval/memory isolation
+- unsafe code/HTML/query/URL execution from model output
+- denial-of-wallet/resource exhaustion when a realistic attacker can trigger material cost/availability impact
+- model/provider credential exposure
+- training/fine-tuning/data provenance only when actually part of the system
 
-- Work only on systems, applications, data, and artifacts the user owns or is authorized to assess.
-- Begin with read-only inspection. Treat network requests, execution of untrusted code, active scanning, exploitation, credential use, containment, and configuration changes as explicit actions requiring confirmed scope.
-- Keep destructive, disruptive, or externally visible steps in plan-only form unless the user clearly authorizes execution.
-- Review installed tools and local documentation before adding dependencies. Never execute an unreviewed remote-install pipeline; verify the source and pin versions when installation is authorized.
-- Preserve evidence and record assumptions, commands, timestamps, limitations, and confidence. Redact secrets and sensitive data from outputs.
-- Stop when safety, legal authority, production impact, or evidence integrity is uncertain.
+Use the current OWASP GenAI LLM and Agentic guidance as a mapping aid when requested; verify the current taxonomy instead of treating a year label in this package as permanently current.
 
-## Purpose
+## Testing
 
-Support authorized assessment of the security of AI/LLM-powered applications — chatbots, RAG pipelines, autonomous agents, and tool-using systems. The assistant maps findings to the **OWASP Top 10 for LLM Applications (2025)** and the **MITRE ATLAS** adversarial-ML knowledge base, builds reproducible attack cases, and recommends concrete mitigations (input/output guardrails, least-privilege tool scopes, content pr...
-> **Authorization Required**: Only test AI systems you own or are explicitly authorized to assess. Prompt-injection and data-exfiltration testing against third-party AI services may violate their terms of service and local law. Confirm written scope before proceeding.
+Prefer deterministic test cases that assert the protected boundary, not a collection of novelty jailbreak prompts. Optional frameworks such as garak, promptfoo or PyRIT can broaden coverage if already available, but their pass/fail output requires semantic triage.
 
-## Activation Triggers
+## Output
 
-This skill activates when the user asks about:
-- Prompt injection (direct or indirect), jailbreaks, or system-prompt extraction
-- OWASP LLM Top 10, MITRE ATLAS, or AI/ML threat modeling
-- Securing a RAG pipeline, vector database, or retrieval layer
-- LLM agent / tool-use / function-calling security and confused-deputy risks
-- Guardrail, content-filter, or model output validation design
-- Sensitive-information disclosure or training-data leakage from a model
-- Model / ML supply chain security (model files, pickle, model registries)
-- AI red teaming, jailbreak corpora, or automated adversarial prompt generation
-
-## Prerequisites
-
-**Optional enhanced capabilities:**
-- garak — LLM vulnerability scanner (NVIDIA)
-- promptfoo — prompt/red-team evaluation harness
-- API key for the target LLM endpoint (test environment only)
-- modelscan / picklescan — ML model file safety scanning
-
-## 6. Output Handling & Guardrails
-
-- **Never** pass raw LLM output into eval, SQL, shell, or innerHTML. Encode/parameterize at the sink (LLM05).
-- Layered guardrails: input filter → policy in system prompt → output classifier → sink-specific sanitization. Defense in depth, since any single layer is bypassable.
-- Validate structured output against a strict schema; reject on parse failure.
-- Apply egress controls so an injected agent cannot reach attacker URLs.
-
-## Output Standards
-
-Produce a structured AI security assessment:
-
-## Required output discipline
-
-- Separate observed evidence, source-supported facts, inference, assumptions, and recommendations.
-- State tool and data limitations explicitly.
-- Preserve exact technical literals, measurements, citations, and user-approved constraints.
-- Provide validation steps, unresolved issues, residual risk, and the next authorization gate.
-- Never claim execution, access, containment, compliance, certification, or verification that was not observed.
-
-_Source workflow alias: testing-ai-llm-security. Consolidated from the validated source; executable examples and platform-specific artifacts were intentionally omitted._
+Validated security findings, robustness observations, test limitations and mitigations tied to real control points.

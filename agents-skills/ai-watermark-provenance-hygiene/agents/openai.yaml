@@ -1,0 +1,5 @@
+interface:
+  display_name: "AI Watermark & Provenance Hygiene"
+  short_description: "Inspect and clean authorized content for invisible Unicode and selected provenance metadata."
+policy:
+  allow_implicit_invocation: false

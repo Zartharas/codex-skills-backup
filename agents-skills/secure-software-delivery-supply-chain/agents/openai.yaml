@@ -1,0 +1,7 @@
+interface:
+  display_name: "Secure Software Delivery & Supply Chain"
+  short_description: "SBOM, CI/CD, secrets, containers, signing, and supply-chain security."
+  default_prompt: "Use $secure-software-delivery-supply-chain to review this software delivery or supply-chain risk."
+  brand_color: "#92400E"
+policy:
+  allow_implicit_invocation: false

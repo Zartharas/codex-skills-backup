@@ -1,0 +1,7 @@
+interface:
+  display_name: "Vibe Coding Security Review"
+  short_description: "Evidence-first application security review with false-positive suppression."
+  default_prompt: "Use $vibe-coding-security-review to review this application code for evidence-backed security vulnerabilities."
+  brand_color: "#B91C1C"
+policy:
+  allow_implicit_invocation: false
