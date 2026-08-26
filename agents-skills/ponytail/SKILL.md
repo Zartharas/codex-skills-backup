@@ -1,13 +1,13 @@
 ---
 name: ponytail
-description: "Use to simplify code, configuration, or implementation structure while preserving behavior, interfaces, security properties, test coverage, and operational constraints. Prefer the smallest correct change and validate before declaring completion."
+description: "Use to simplify code, configuration, or implementation structure while preserving behavior, interfaces, security properties, test coverage, and operational constraints. Surface assumptions, prefer the smallest correct change, make surgical edits, and validate before declaring completion."
 ---
 
 # Ponytail
 
 ## Purpose
 
-Use to simplify code, configuration, or implementation structure while preserving behavior, interfaces, security properties, test coverage, and operational constraints. Prefer the smallest correct change and validate before declaring completion.
+Use to simplify code, configuration, or implementation structure while preserving behavior, interfaces, security properties, test coverage, and operational constraints. Surface assumptions before editing, prefer the smallest correct change, make surgical edits, and validate before declaring completion.
 
 This is a portable, instruction-first package. Scripts, binaries, local hooks, source snapshots, and platform-specific executables are not bundled.
 
@@ -44,6 +44,13 @@ When two routes remain plausible, ask one narrow question or choose the more spe
 
 - Simplifying prose or explanations when no implementation is involved.
 - Large redesigns without evidence that they are necessary.
+
+## Karpathy-guided change discipline
+
+- State the interpretation, assumptions, and tradeoffs before a non-trivial simplification; ask when ambiguity could change the result.
+- Touch only lines required by the objective. Do not refactor adjacent code, comments, formatting, or pre-existing dead code.
+- Remove only orphans created by the change. Treat unrelated cleanup as a separate request.
+- Define a concrete success condition and one focused check before editing; stop when it is satisfied.
 
 ## Output contract
 

@@ -1,6 +1,6 @@
 ---
 name: evidence-first-execution
-description: Use this skill for research, coding, troubleshooting, analysis, operations, or project work when the task could expand into unnecessary testing, validation, documentation, architecture, governance, or repeated debugging. It keeps execution focused on the real objective, requires the smallest sufficient action, validates the real path before validators, classifies failures correctly, and stops non-core detours after two unsuccessful iterations.
+description: Use this skill for research, coding, troubleshooting, analysis, operations, or project work when the task could expand into unnecessary testing, validation, documentation, architecture, governance, or repeated debugging. It surfaces assumptions and tradeoffs, keeps execution focused on the real objective, requires the smallest sufficient action, validates the real path before validators, classifies failures correctly, and stops non-core detours after two unsuccessful iterations.
 ---
 
 # Evidence-First Execution
@@ -26,7 +26,9 @@ Before substantial work, determine internally:
 - **Stop condition:** What exact condition ends the task?
 - **Detour count:** How many unsuccessful iterations has this non-core issue already caused?
 
-Do not expose this internal gate unless it helps the user make a decision.
+Also state the working interpretation and assumptions when the request is ambiguous. If two interpretations would lead to materially different work, ask before acting.
+
+Do not expose this internal gate unless it helps the user make a decision. For consequential work, expose the assumption, tradeoff, and success condition briefly.
 
 ## Step 2: Apply the necessity gate
 
@@ -54,6 +56,8 @@ Prefer this order:
 7. Redesign architecture only when simpler approaches cannot satisfy the objective.
 
 Do not begin with a framework, large automation wrapper, new architecture, or governance layer unless the objective requires it.
+
+Keep the change surgical: modify only what the objective requires, preserve adjacent behavior and project style, and leave unrelated cleanup for a separate task.
 
 ## Step 4: Validate the real path first
 

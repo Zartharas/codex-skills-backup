@@ -1,13 +1,13 @@
 ---
 name: model-efficiency-router
-description: "Use before suggesting or starting a distinct task or phase when model efficiency matters. Perform a bounded context preflight: distinguish chat-only work from project work, consult available session memory, and for projects inspect the smallest relevant documentation set. Recommend the lowest sufficient host-available model, reasoning effort, tool plan, and evidence budget; announce a switch in advance only when materially useful. Never claim to change the active model itself."
+description: "Use before suggesting or starting a distinct task or phase when model efficiency matters. Perform a bounded context preflight: distinguish chat-only work from project work, surface assumptions and tradeoffs, consult available session memory, and for projects inspect the smallest relevant documentation set. Recommend the lowest sufficient host-available model, reasoning effort, tool plan, and evidence budget; announce a switch in advance only when materially useful. Never claim to change the active model itself."
 ---
 
 # Model Efficiency Router
 
 ## Purpose
 
-Use before a distinct task or phase to recommend the lowest sufficient model, reasoning effort, tool plan, and evidence budget. Base the recommendation on a bounded scan of available conversation context, session memory, and relevant project documentation. The skill cannot change the active model itself.
+Use before a distinct task or phase to recommend the lowest sufficient model, reasoning effort, tool plan, and evidence budget. Base the recommendation on a bounded scan of available conversation context, session memory, and relevant project documentation. Surface the working interpretation, assumptions, tradeoffs, and success condition when they affect the route. The skill cannot change the active model itself.
 
 This is a portable, instruction-first package. Scripts, binaries, local hooks, source snapshots, and platform-specific executables are not bundled.
 

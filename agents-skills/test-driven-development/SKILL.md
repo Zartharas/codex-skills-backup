@@ -1,13 +1,13 @@
 ---
 name: test-driven-development
-description: Use when implementing any feature or bugfix, before writing implementation code
+description: Use when implementing any feature or bugfix, before writing implementation code. Surface assumptions, define the behavior and success condition, then make the smallest surgical change that passes the test.
 ---
 
 # Test-Driven Development (TDD)
 
 ## Overview
 
-Write the test first. Watch it fail. Write minimal code to pass.
+Write the test first. State the behavior and assumptions. Watch the test fail. Write the smallest surgical code change to pass.
 
 **Core principle:** If you didn't watch the test fail, you don't know if it tests the right thing.
 
@@ -164,6 +164,8 @@ Over-engineered
 </Bad>
 
 Don't add features, refactor other code, or "improve" beyond the test.
+
+Keep the implementation surgical: touch only code required by the failing behavior, preserve adjacent behavior and style, and defer unrelated cleanup. If the requested behavior is ambiguous, ask before writing the test.
 
 ### Verify GREEN - Watch It Pass
 
