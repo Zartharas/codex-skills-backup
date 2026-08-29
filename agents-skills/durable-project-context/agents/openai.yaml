@@ -1,0 +1,4 @@
+interface:
+  display_name: "Durable Project Context"
+  short_description: "Create concise, repository-native project memory"
+  default_prompt: "Establish a concise, repository-native context index and link it to the existing project trackers without duplicating their authority."
