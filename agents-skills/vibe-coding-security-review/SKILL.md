@@ -22,6 +22,10 @@ Find security defects that are supported by repository evidence, explain the rea
 
 This skill is security-sensitive and should be explicitly invoked. Do not silently turn ordinary debugging or style review into a full security audit.
 
+For a narrow code change, use this skill only for the security-review portion;
+route implementation and test-first changes to the project's normal coding
+workflow and `test-driven-development` when applicable.
+
 ## Route before reviewing
 
 Use this skill for application/source-code security: access control, authentication, tenancy, injection, browser/client security, payments, uploads, SSRF, application secrets, cryptography, error handling, and app-level LLM integration.

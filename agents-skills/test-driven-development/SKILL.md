@@ -1,6 +1,6 @@
 ---
 name: test-driven-development
-description: Use when implementing any feature or bugfix, before writing implementation code. Surface assumptions, define the behavior and success condition, then make the smallest surgical change that passes the test.
+description: Use before implementing a feature, bugfix, refactor, or behavior change when a test can define the expected behavior. Surface assumptions, define the success condition, and make the smallest surgical change. Do not use for analysis-only, documentation-only, or configuration-only work unless tests are the requested deliverable.
 ---
 
 # Test-Driven Development (TDD)
@@ -27,6 +27,9 @@ Write the test first. State the behavior and assumptions. Watch the test fail. W
 - Configuration files
 
 Thinking "skip TDD just this once"? Stop. That's rationalization.
+
+For review, research, documentation, or configuration-only requests, route to
+the relevant specialist instead of forcing a production-code TDD cycle.
 
 ## The Iron Law
 

@@ -70,6 +70,22 @@ When two routes remain plausible, ask one narrow question or choose the more spe
    model tier only when the remaining difficulty warrants it.
 7. De-escalate at the next task boundary after the hard reasoning is complete.
 
+## Compact routing record
+
+For each distinct task or phase, produce only this decision record unless more
+detail is requested:
+
+```text
+Task class / risk:
+Ambiguity / verification burden:
+Recommended model and effort:
+Minimum tool and evidence plan:
+Escalation condition:
+```
+
+Reuse the record while the objective, assumptions, scope, and available tools
+remain unchanged. Recompute routing only when one of those inputs changes.
+
 ## Non-goals
 
 - Performing the substantive domain analysis.

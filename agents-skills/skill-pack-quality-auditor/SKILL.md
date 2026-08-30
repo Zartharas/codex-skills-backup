@@ -45,6 +45,19 @@ When two routes remain plausible, ask one narrow question or choose the more spe
 - Recreating third-party skills from names alone.
 - Executing bundled code before static review or claiming Web installation.
 
+## Efficient audit order
+
+Use the smallest evidence set that can answer the request:
+
+1. Check package structure and frontmatter.
+2. Check trigger descriptions, exclusions, and routing conflicts.
+3. Check referenced files, tool assumptions, and safety boundaries.
+4. Check entrypoint size and progressive disclosure.
+5. Run package or archive validation only after the direct checks are clear.
+
+Report findings by impact and confidence. Do not create a new skill when a
+focused routing or reference edit resolves the overlap.
+
 ## Output contract
 
 Return the selected workflow alias, inputs used, evidence limitations, findings or artifact, validation performed, unresolved risks, and the next decision or authorization gate. Keep the answer proportional to the request.
