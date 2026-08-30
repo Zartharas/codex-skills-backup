@@ -33,6 +33,12 @@ Read only the workflow that matches the current request. Do not load every workf
 4. Cardholder-data environment and payment controls → PCI DSS workflow.
 5. Trust Services Criteria and audit evidence over a review period → SOC 2 workflow.
 
+Use `risk-privacy-authorization-suite` for a privacy impact assessment, risk
+scoring, CSF maturity, or formal RMF authorization package. Use this suite
+when the governing framework's control and evidence mapping is the requested
+deliverable. A control gap is not a legal opinion, certification decision, or
+automatically a reportable breach.
+
 When two routes remain plausible, ask one narrow question or choose the more specific, lower-impact workflow and state the assumption.
 
 ## Shared execution contract

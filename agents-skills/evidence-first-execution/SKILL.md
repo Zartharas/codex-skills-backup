@@ -152,6 +152,9 @@ Finish when the result is defensible and sufficient.
 
 ## Research mode
 
+Read only the mode that matches the work at hand. Do not apply research,
+coding, troubleshooting, and operational checklists cumulatively.
+
 For hands-on research, substantial work should strengthen at least one of:
 
 - research question or hypothesis;

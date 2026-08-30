@@ -35,6 +35,13 @@ Read only the workflow that matches the current request. Do not load every workf
 5. Quantum readiness, inventory, crypto agility, or hybrid transition → PQC workflow.
 6. Certificate discovery, expiry, renewal, revocation, or inventory → lifecycle workflow.
 
+Route artifact signing, SBOM provenance, or CI/CD signing policy to
+`secure-software-delivery-supply-chain`; use this suite only when the primary
+question is key custody, certificate trust, protocol cryptography, or crypto
+agility. For a service that needs both identity policy and certificate
+operations, decide the service-authentication design first, then route the
+certificate lifecycle work separately.
+
 When two routes remain plausible, ask one narrow question or choose the more specific, lower-impact workflow and state the assumption.
 
 ## Shared execution contract

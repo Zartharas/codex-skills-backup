@@ -31,6 +31,11 @@ Read only the workflow that matches the current request. Do not load every workf
 3. Organizational cybersecurity outcomes, profiles, tiers, and maturity roadmap → CSF workflow.
 4. Personal-data processing, data flows, privacy harms, and mitigation → PIA workflow.
 
+Route framework-specific control mappings and audit-readiness evidence to
+`compliance-controls-suite`. Treat a risk assessment, PIA, or maturity result
+as decision support: only the accountable business, privacy, or authorizing
+authority can accept risk, determine legal obligations, or grant authorization.
+
 When two routes remain plausible, ask one narrow question or choose the more specific, lower-impact workflow and state the assumption.
 
 ## Shared execution contract

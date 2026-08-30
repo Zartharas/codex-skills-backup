@@ -33,6 +33,11 @@ Read only the workflow that matches the current request. Do not load every workf
 4. XSOAR automation and playbook implementation → SOAR workflow.
 5. User/entity baselining, anomaly scoring, or behavioral risk → UEBA workflow.
 
+Route incident command, stakeholder communications, or containment planning to
+`incident-response-crisis-communications`; route malware or memory artifacts
+to `digital-forensics-malware-suite`. A detection or hunt finding is evidence
+for triage, not proof of compromise or authorization to contain systems.
+
 When two routes remain plausible, ask one narrow question or choose the more specific, lower-impact workflow and state the assumption.
 
 ## Shared execution contract

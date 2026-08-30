@@ -63,6 +63,10 @@ Choose the smallest mode that answers the request:
 - **audit** — repository or scoped-path static review with threat-oriented prioritization.
 - **deep** — targeted runtime reproduction, test harness, fuzzing, or PoC work only when authorized and proportionate.
 
+Do not escalate from `diff` to `audit` or `deep` merely because a broader
+review is possible. Escalate only when the available evidence cannot resolve a
+security decision that matters to the requested change.
+
 ## Evidence-first workflow
 
 ### 1. Scope and architecture

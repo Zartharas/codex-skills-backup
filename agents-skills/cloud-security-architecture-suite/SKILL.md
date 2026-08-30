@@ -31,6 +31,12 @@ Read only the workflow that matches the current request. Do not load every workf
 3. Multi-cloud posture, findings, drift, benchmarks, or CSPM → CSPM workflow.
 4. Runtime workload protection, hosts, containers, functions, or CWPP → workload-protection workflow.
 
+Route active incident containment and crisis coordination to
+`incident-response-crisis-communications`. For any configuration change, state
+the cloud provider, account or organization scope, affected resources,
+permissions, rollout boundary, and rollback condition before proposing an
+execution step.
+
 When two routes remain plausible, ask one narrow question or choose the more specific, lower-impact workflow and state the assumption.
 
 ## Shared execution contract
