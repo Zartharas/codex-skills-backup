@@ -23,6 +23,7 @@ manually edited.
 | Component | Installed / action | Maintenance result |
 | --- | --- | --- |
 | Codex CLI | `0.147.0` → `0.152.1` | Updated through `codex update`; restart Codex to load the refreshed runtime. |
+| Codex local memory | Enabled | Uses Codex's built-in local memory store and per-chat `/memories` controls; configuration is deliberately not copied into this repository. |
 | Official bundled plugins | Codex-managed runtime packages | Marketplace upgrade reported no separately selected remote marketplace updates; do not edit cache directories. |
 | Ponytail | `4.8.4` → `4.9.0` | Updated through its supported Codex marketplace (`DietrichGebert/ponytail`). |
 | agent-browser CLI | `0.33.2` | Installed version verified; its local skill was updated with a fresh-capability check. |
