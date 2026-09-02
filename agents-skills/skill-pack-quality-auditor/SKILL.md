@@ -58,6 +58,21 @@ Use the smallest evidence set that can answer the request:
 Report findings by impact and confidence. Do not create a new skill when a
 focused routing or reference edit resolves the overlap.
 
+## Maintenance protocol
+
+For a periodic update, distinguish instruction packages from installed runtime
+plugins. Verify a package's upstream repository, release, or official vendor
+documentation before changing it; preserve source maps and licenses, and do not
+rewrite a skill merely to refresh a date.
+
+Update vendor-managed Codex plugins through Codex or their configured
+marketplace. Update third-party plugins only through the maintainer's supported
+installer or marketplace, never by editing cache directories. If an update adds
+permissions, hooks, data egress, authentication, or an external account, stop
+for explicit user approval before running it. Record the installed version,
+source checked, validation result, and any update that could not be safely
+automated.
+
 ## Output contract
 
 Return the selected workflow alias, inputs used, evidence limitations, findings or artifact, validation performed, unresolved risks, and the next decision or authorization gate. Keep the answer proportional to the request.
