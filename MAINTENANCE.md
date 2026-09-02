@@ -8,9 +8,13 @@ manually edited.
 
 ### Verified skill catalog
 
-- `agents-skills/`: 24 user-managed skills passed the catalog structural audit.
+- `agents-skills/`: 25 user-managed skills passed the catalog structural audit.
 - `agents-skills/durable-project-context`: the one Codex-home skill passed the
   same audit.
+- `agents-skills/archify`: added from `tt-a1i/archify` at packaged version
+  `2.17`; it produces locally validated standalone technical diagrams. Its
+  optional fixed-manifest update reminder can be disabled with
+  `ARCHIFY_UPDATE_CHECK_DISABLED=1`.
 - The `agent-browser` instructions now require checking the installed version
   and fresh command guidance before relying on newly introduced commands.
 - `skill-pack-quality-auditor` now records an explicit maintenance protocol:
